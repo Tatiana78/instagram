@@ -10,16 +10,18 @@
 
     <!-- link inserindo CSS no HTML -->
     <link rel="stylesheet" type="text/css" href="style.css" media="screen">
-    <!-- link estilo CSS-Bootstrap -->
+    <!-- link estilo CSS-Bootstrap/ link-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--  -->
+    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
 
 </head>
 
 <body class="bg-light">
 
     <!-- Navbar suporte de componente da documentação -->
-    <nav class="navbar navbar-light bg-white">
+    <nav class="navbar navbar-light bg-white border border-bottom">
         <!-- Container; responsivo a largura fixa do cabeçãrio ou rodapé superior -->
         <div class="container">
             <!-- DIV class; estiliza com CSS ou manipular JS -->
@@ -30,19 +32,34 @@
                     <img src="./logo.png" class="logo">
                 </div>
                 <!-- Alinhamento do campo de pesquisa -->
+                <!-- Acrescentei no class; cor dentro campo de pesquisa e tirei o contono -->
                 <!-- Campo de pesquisa com acessibilidade -aria-label -->
-                <div class="col-md-4 md-auto">
-                    <input type="search=" class="form-control" type="search" placeholder="Pesquisar"
-                        aria-label="Pesquisar" aria-describedby="basic-addon1">
+                <div class="col-md-4 md-auto btn-icon">
+                    <div class="input-group mb-3">
+                        <!-- Botão alterado Pesquisa e input Class acrescentado cor e tirado o contorno -->
+                        <input type="text" class="form-control border-0 bg-light" placeholder="Pesquisar"
+                            aria-label="Pesquisar" aria-describedby="basic-addon1">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">
+                                <i class="far fa-times-circle"></i>
+
+                            </span>
+
+                        </div>
+                    </div>
+
+
                 </div>
-                <!-- Sistema Grid/Utilitários Flexbox/Margens automáticas = Botões Entrar/Cadastro-->
-                <div class="col-md-4 ml-auto text-right">
+                <!-- Class alinhou os botões para a direita -->
+                <!-- Sistema Grid/Utilitários Flexbox/Margens automáticas = Botões Entrar/Cadastro -->
+                <div class="col-md-4 ml-auto text-right ">
                     <button type="button" class="btn btn-primary">Entrar</button>
                     <button type="button" class="btn btn-link">Cadastra-se</button>
                 </div>
-                <div class="border-top-0">
-                    <span class="border-top-0"></span>  
-                </div>
+
+
+
+
             </div>
         </div>
     </nav>
