@@ -1,11 +1,17 @@
+/* Important PRIORIZA linha do rodapé superior aparecer suave */
 body {
     background: #fafafa !important;
 }
 
 .bg-white{
-    background-color: white;
+    background-color: white 
+}
+/* Important PRIORIZA o tamanho detalhado no caso LOGOTIPO */
+.logo {
+    height: 50px !important;
 }
 
-.logo {
-    height: 50px;
+.border-3 {
+    border-width:3px 
 }
+ 
